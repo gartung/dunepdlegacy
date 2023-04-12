@@ -37,18 +37,10 @@ find_ups_product( art )
 find_ups_product( cetlib )
 find_ups_product( gallery )
 find_ups_product( messagefacility )
-find_ups_product( hdf5 )
 
 # have to make sure cmake doesn't select the system libraries
 # define libsigc
 cet_find_library( SIGC    NAMES sigc-2.0  PATHS ENV LIBSIGCPP_LIB NO_DEFAULT_PATH )
-
-string(TOUPPER ${CMAKE_BUILD_TYPE} BTYPE_UC )
-if( ${BTYPE_UC} MATCHES "DEBUG" )
- find_library( LIBHDF5 NAMES hdf5_debug PATHS ENV HDF5_LIB NO_DEFAULT_PATH)
-else()
- find_library( LIBHDF5 NAMES hdf5 PATHS ENV HDF5_LIB NO_DEFAULT_PATH)
-endif()
 
 # macros for art_dictionary and simple_plugin
 include(ArtDictionary)
