@@ -46,7 +46,7 @@ struct HuffTree {
         frequency = other.frequency;
         hasParent = other.hasParent;
       }
-     }
+    }
     ~Node() {};
     
     // Operator< overloading for ordering by frequency. If the frequency is the
