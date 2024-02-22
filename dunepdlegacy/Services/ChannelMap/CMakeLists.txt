@@ -25,7 +25,7 @@ simple_plugin(PdspChannelMapService "service"
               ${MF_MESSAGELOGGER}
               ${CETLIB_LIBS}
               ${ROOT_BASIC_LIB_LIST}
-)
+) ### MIGRATE-ACTION-RECOMMENDED (migrate-3.22.02) - deprecated: use cet_build_plugin() with explicit source lists and plugin base types
 
 
 simple_plugin(IcebergChannelMapService "service"
@@ -36,5 +36,5 @@ simple_plugin(IcebergChannelMapService "service"
               ${MF_MESSAGELOGGER}
               ${CETLIB_LIBS}
               ${ROOT_BASIC_LIB_LIST}
-)
+) ### MIGRATE-ACTION-RECOMMENDED (migrate-3.22.02) - deprecated: use cet_build_plugin() with explicit source lists and plugin base types
 
