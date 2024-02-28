@@ -31,7 +31,7 @@ cet_set_compiler_flags(DIAGS VIGILANT
 cet_report_compiler_flags() ### MIGRATE-ACTION-RECOMMENDED (migrate-3.22.02) - add args: REPORT_THRESHOLD VERBOSE
 find_package(nufinder REQUIRED)
 # these are minimum required versions, not the actual product versions
-find_package(Boost REQUIRED) # Needs to be first to cover for a missing transitive ### MIGRATE-CHANGED (migrate-3.22.02) - find_ups_product(...) -> find_package(REQUIRED ...)
+find_package(Boost REQUIRED COMPONENTS system) # Needs to be first to cover for a missing transitive ### MIGRATE-CHANGED (migrate-3.22.02) - find_ups_product(...) -> find_package(REQUIRED ...)
                  # dependency from artdaq_core.
 find_package( artdaq_core REQUIRED ) ### MIGRATE-CHANGED (migrate-3.22.02) - find_ups_product(artdaq_core ...) -> find_package(artdaq_core REQUIRED ...)
 find_package( art REQUIRED ) ### MIGRATE-CHANGED (migrate-3.22.02) - find_ups_product(art ...) -> find_package(art REQUIRED ...)
