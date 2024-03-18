@@ -1,7 +1,7 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
 parent dunepdlegacy     #v1_00_00
-defaultqual    e20
+defaultqual    e26
 
 # These optional lines define the installed directories where
 # headers, libraries, and executables will be found
@@ -26,9 +26,9 @@ table_fragment_end
 #
 product         version         optional
 artdaq_core     v3_10_01
-art             v3_12_01
+art             v3_14_04
 cetbuildtools   v8_20_00        -          only_for_build
-gallery		v1_20_03
+gallery		v1_22_05
 end_product_list
 
 # for what the qualifiers mean, see
@@ -39,10 +39,10 @@ end_product_list
 # a "-" here means the dependent product is not required by the parent and will not be setup
 
 qualifier         artdaq_core             art              gallery       notes
-e26:debug         e26:debug:s120b         e26:debug        e26:debug
-e26:prof          e26:prof:s120b          e26:prof         e26:prof
-c14:debug         c14:debug:s120b         c14:debug        c14:debug
-c14:prof          c14:prof:s120b          c14:prof         c14:prof
+e26:debug         e26:debug:s130          e26:debug        e26:debug
+e26:prof          e26:prof:s130           e26:prof         e26:prof
+c14:debug         c14:debug:s130          c14:debug        c14:debug
+c14:prof          c14:prof:s130          c14:prof         c14:prof
 
 # Preserve tabs and formatting in emacs and vi / vim:
 
