@@ -25,10 +25,10 @@ table_fragment_end
 
 #
 product         version         optional
-artdaq_core     v3_10_01
+artdaq_core     v3_10_02
 art             v3_14_04
 cetbuildtools   v8_20_00        -          only_for_build
-gallery		v1_22_05
+gallery		v1_22_06
 end_product_list
 
 # for what the qualifiers mean, see
@@ -39,10 +39,10 @@ end_product_list
 # a "-" here means the dependent product is not required by the parent and will not be setup
 
 qualifier         artdaq_core             art              gallery       notes
-e26:debug         e26:debug:s130          e26:debug        e26:debug
-e26:prof          e26:prof:s130           e26:prof         e26:prof
-c14:debug         c14:debug:s130          c14:debug        c14:debug
-c14:prof          c14:prof:s130          c14:prof         c14:prof
+e26:debug         e26:debug:s131          e26:debug        e26:debug
+e26:prof          e26:prof:s131           e26:prof         e26:prof
+c14:debug         c14:debug:s131          c14:debug        c14:debug
+c14:prof          c14:prof:s131           c14:prof         c14:prof
 
 # Preserve tabs and formatting in emacs and vi / vim:
 
